@@ -24,5 +24,5 @@ jobs:
     steps:
     - name: Build_3 Step1
       run: |
-        echo "Run Build_3 Step1 : ${{ env.name }}"
+        echo "Run Build_3 Step1 Variables : ${{ vars.PROJECT_SERVER }}"
         echo "Run Build_3 Step2 Secrets : ${{ secrets.PRIVATE_KEY }}"
