@@ -1,0 +1,10 @@
+name: step02_condition
+on: workflow_dispatch
+jobs:
+  build:
+    if: github.repository == 'yeosujin/github-action-test'
+    runs-on: ubuntu-latest
+    steps:
+    - name: Print Result
+      run: |
+        echo "Run Build on yesoujin/github-action-test"
