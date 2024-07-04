@@ -12,10 +12,10 @@ jobs:
     steps:
     - name: Build_1 Step1
       run: |
-        echo "Run Build_1 Step1 : ${{ name }}"
+        echo "Run Build_1 Step1 : $name"
   build_2:
     runs-on: ubuntu-latest
     steps:
     - name: Build_2 Step1
       run: |
-        echo "Run Build_2 Step1 : $name"
+        echo "Run Build_2 Step1 : ${{ env.name }}"
