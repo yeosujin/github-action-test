@@ -18,6 +18,7 @@ jobs:
         
     - name: Make File of application.properties
       run: |
+        mkdir ./src/main/resources
         touch ./src/main/resources/application.properties
         echo "${{ secrets.APPLICATION_PROPERTIES }}" > ./src/main/resources/application.properties
     # - name: Upload application.properties
