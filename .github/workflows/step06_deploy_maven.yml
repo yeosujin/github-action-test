@@ -73,7 +73,7 @@ jobs:
            sudo fuser -k 8080/tcp || true
            cd /home/${{ secrets.REMOTE_USER }}
            nohup sudo java -jar app.jar > app.log 2>&1 &
-           sleep 30
+           sleep 60
            if pgrep -f 'java -jar.*app.jar' > /dev/null
            then
              echo 'Application started successfully'
